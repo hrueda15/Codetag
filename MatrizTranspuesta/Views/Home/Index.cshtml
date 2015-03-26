@@ -1,0 +1,44 @@
+﻿@using MatrizTranspuesta.Models 
+
+<div class="Steps-Info">
+    <h2>@Tittle.NameInfoProcess</h2>
+    @using (Html.BeginForm("UploadFile", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        
+        <ul>
+            <li>
+                <img src="~/Image/orderedList1.png" />
+                <span>
+                    @Tittle.NameStepsOne 
+                </span>
+            </li>
+            <li>
+                <div>
+                    <P><INPUT type="file" id="UploadedFile" name="UploadedFile" runat="server"></P>
+                </div>
+                
+            </li>
+            <li>
+                <img src="~/Image/orderedList2.png" />
+                <span>
+                    @Tittle.NameStepsTwo
+                </span>
+            </li>
+            <li>
+                <div>
+                    <P><INPUT type="submit" value="Procesar"></P>
+                </div>
+                
+            </li>
+    </ul>
+        
+    }
+    
+</div>
+
+
+
+
+
+   
+   
